@@ -1,0 +1,189 @@
+======================================================================
+L2 CHINESE 对-CONSTRUCTION: COMPREHENSIVE STATISTICAL REPORT
+======================================================================
+
+Generated: 2026-07-30 17:28:01
+Script Version: v19 (5-category taxonomy, no Uncodable; adds Figure 1 productivity divergence)
+
+
+======================================================================
+STATISTICAL METHODOLOGY
+======================================================================
+
+This analysis employs a comprehensive statistical framework based on
+corpus linguistics standards (Dunning 1993; Rayson & Garside 2000):
+
+  Overall Distribution Tests:
+    - Chi-square test of independence (contingency tables)
+    - Effect size: Cramér's V
+
+  Pairwise Comparisons:
+    - Log-Likelihood Ratio (G²/LLR)
+    - Effect size: Log Ratio (log₂ of normalised frequency ratio)
+
+  CRITICAL METHODOLOGICAL NOTE:
+    - Sections 4.1-4.3: Analyse CORRECT USAGE ONLY (errors filtered)
+    - Section 4.4: Analyses error patterns specifically
+    - This ensures productivity measures reflect acquired competence,
+      not merely attempted usage.
+
+  Effect Size Interpretation (Cramér's V):
+    - < 0.10: Negligible
+    - 0.10-0.29: Small
+    - 0.30-0.49: Medium
+    - ≥ 0.50: Large
+
+======================================================================
+1. DATA OVERVIEW
+======================================================================
+
+Total instances: 1542
+Correct usage: 1171 (75.9%)
+Error instances: 371 (24.1%)
+
+Distribution by Level:
+  Level           Total    Correct     Errors   Error Rate
+  ------------------------------------------------------
+  L1                101         81         20        19.8%
+  L2                905        676        229        25.3%
+  L3                536        414        122        22.8%
+
+======================================================================
+4.1 PRODUCTIVITY (Correct Usage Only)
+======================================================================
+
+Normalised Frequency (per 100,000 words):
+  L1 (Beginner): 81 instances = 28.07 per 100K
+  L2 (Intermediate): 676 instances = 107.78 per 100K
+  L3 (Advanced): 414 instances = 109.39 per 100K
+
+--------------------------------------------------
+Pairwise Comparisons (Log-Likelihood Ratio)
+--------------------------------------------------
+
+  L1 → L2:
+    28.07 → 107.78 per 100K
+    G² = 183.70, p < .001, Log Ratio = +1.94 ***
+
+  L2 → L3:
+    107.78 → 109.39 per 100K
+    G² = 0.06, p = 0.812, Log Ratio = +0.02 n.s.
+
+======================================================================
+4.2 FUNCTIONAL COMPLEXITY (Correct Usage Only)
+======================================================================
+
+Overall Distribution Test (Level × Function):
+  χ²(10) = 119.89, p < .001
+  Cramér's V = 0.226 (small effect)
+
+--------------------------------------------------
+Pairwise Comparisons by Function (LLR)
+--------------------------------------------------
+
+  Function     L1→L2 LogR    Sig   L2→L3 LogR    Sig
+  ------------------------------------------------
+  DA                +2.11    ***        -1.05    ***
+  SI                +0.46   n.s.        +3.31    ***
+  MS                +1.46    ***        +0.35      *
+  ABT               +0.88   n.s.        +4.73    ***
+  DISP              +1.48    ***        +0.43   n.s.
+  EVAL              +3.01    ***        -0.59     **
+
+======================================================================
+4.3.1 SEMANTIC CLASSES (Correct Usage Only)
+======================================================================
+
+Overall Distribution Test (Level × Semantics):
+  χ²(12) = 68.68, p < .001
+  Cramér's V = 0.171 (small effect)
+
+======================================================================
+4.3.2 ACCESSIBILITY (Correct Usage Only)
+======================================================================
+
+Overall Distribution Test (Level × Accessibility):
+  χ²(10) = 68.17, p < .001
+  Cramér's V = 0.171 (small effect)
+
+======================================================================
+4.4 ERROR ANALYSIS
+======================================================================
+
+
+--------------------------------------------------
+4.4.1 Error Rate Comparison
+--------------------------------------------------
+
+  χ²(2) = 2.26, p = 0.322
+  Cramér's V = 0.038 (negligible effect)
+
+--------------------------------------------------
+4.4.2 Error Type Distribution
+--------------------------------------------------
+
+  χ²(8) = 14.46, p = 0.070
+  Cramér's V = 0.140 (small effect)
+
+--------------------------------------------------
+4.4.3 Error Type Pairwise Comparisons (LLR)
+--------------------------------------------------
+
+  Error Type                  L1→L2 LogR    Sig   L2→L3 LogR    Sig
+  ---------------------------------------------------------------
+  Omission                         -0.87   n.s.        -0.03   n.s.
+  Addition                         +0.18   n.s.        +1.53     **
+  Misordering                      -1.20   n.s.        +0.59   n.s.
+  Collocation                      +0.54   n.s.        -0.22   n.s.
+  Non-dui-construction             -0.00   n.s.        -0.22   n.s.
+
+======================================================================
+4.5 ERROR × FUNCTION ASSOCIATION
+======================================================================
+
+Chi-Square Test of Independence:
+  χ²(20) = 140.08, p < .001
+  Cramér's V = 0.308 (medium effect)
+
+--------------------------------------------------
+Significant Associations (Standardized Residuals)
+--------------------------------------------------
+
+  Error Type                Function          z    Sig
+  ---------------------------------------------------
+  Omission                  DA            -2.13      *
+  Addition                  MS            +5.80    ***
+  Addition                  EVAL          -3.75    ***
+  Collocation               DA            +4.44    ***
+  Collocation               ABT           -2.37      *
+  Collocation               DISP          +2.16      *
+  Collocation               EVAL          -2.51      *
+  Non-dui-construction      DA            -2.22      *
+  Non-dui-construction      MS            -2.79     **
+  Non-dui-construction      ABT           +3.10     **
+  Non-dui-construction      EVAL          +3.11     **
+
+======================================================================
+4.6 INTENDED FUNCTION OF NON-DUI-CONSTRUCTION ERRORS
+======================================================================
+
+Non-dui-construction errors with an identified target function: 154
+
+  Intended Function      n       %
+  --------------------------------
+  Perspective           94   61.0%
+  Causative             30   19.5%
+  Topicalisation        11    7.1%
+  Parallel               8    5.2%
+  Domain                 5    3.2%
+  Locative               3    1.9%
+  Purpose                2    1.3%
+  Resultative            1    0.6%
+
+Uncodable (uninterpretable) errors, excluded from error-type
+analysis but counted in the overall error rate: 0
+Codable errors analysed in 4.4.2: 371
+
+======================================================================
+END OF REPORT
+======================================================================

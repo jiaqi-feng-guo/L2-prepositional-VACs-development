@@ -1,0 +1,17 @@
+cff-version: 1.2.0
+message: "If you use this dataset or code, please cite the paper below."
+title: "Measuring Multidimensional Development of L2 Prepositional Verb-Argument Constructions"
+authors:
+  - family-names: Guo
+    given-names: Jiaqi Feng
+    orcid: "https://orcid.org/0000-0002-1853-1526"
+    affiliation: "University of Turku"
+  - family-names: Pérez-Paredes
+    given-names: Pascual
+    orcid: "https://orcid.org/0000-0002-2796-338X"
+    affiliation: "University of Murcia"
+  - family-names: Wu
+    given-names: Emma Lejun
+    affiliation: "University of Cambridge"
+year: 2026
+status: under-review
