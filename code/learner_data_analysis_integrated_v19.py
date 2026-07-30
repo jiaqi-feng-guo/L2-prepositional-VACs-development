@@ -1,71 +1,8 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 """
-L2 Chinese 对-Construction Analysis - Integrated Script v19
+L2 Chinese 对-Construction Analysis - Integrated Script 
 ===========================================================
-
-Generates 9 publication-quality figures with comprehensive statistical analysis.
-
-v19 CHANGES (June 2026):
-- Error taxonomy reduced to 5 analytical categories: 'Preposition substitution'
-  and 'Collocation' are MERGED into a single 'Collocation' category for all
-  statistics and figures. The finer split is preserved in the data as
-  'Error-Type-Old' (Collocation_Prep = preposition-slot error; Collocation_VA =
-  verb-slot error) and reported descriptively only. Five categories: Omission,
-  Addition, Misordering, Collocation, Non-dui-construction.
-- Input now reads a SINGLE combined workbook (learner_data_updated.xlsx) whose
-  'Error-Type-New' column carries the 5-category label (or 'Uncodable'); a row
-  is an error iff 'Error-Type-New' is non-empty.
-
-v19 CHANGES (June 2026):
-- Error taxonomy updated to the revised 6 categories (Omission, Addition,
-  Misordering, Preposition substitution, Collocation, Non-dui-construction).
-  'X-Y Reversal' folded into Misordering; 'Semantic-Misalignment' folded into
-  Collocation; 'Collocational' renamed 'Collocation'.
-- NEW 'Uncodable' residual: uninterpretable errors count toward the overall
-  error RATE (4.4.1) but are EXCLUDED from all error-TYPE analyses (4.4.2 and
-  Error x Function), per Corder's interpretability criterion.
-- Input now reads the two source files directly (correct + error CSVs) and
-  concatenates them; no single combined file needed.
-- NEW Intended-Function tabulation for Non-dui-construction errors.
-- Graph 9 axis relabelled 'Constructional Function' (it plots the six
-  constructional functions, not the intended functions).
-
-V14 CHANGES (March 2026):
-- Benjamini-Hochberg correction on all pairwise LLR tests
-- Bootstrap 95% CIs for all Cramér's V effect sizes
-- Kruskal-Wallis + Dunn's post-hoc for Accessibility (central tendency)
-- Pairwise chi-square for error rate stability confirmation
-- Productivity: LLR test on unique type counts across levels
-- Statistical framework summary table in report
-- All p-values collected and BH-corrected per analysis section
-
-V13 Features (retained):
-- Chi-square test of independence for all distribution comparisons
-- Log-Likelihood Ratio (LLR/G²) for pairwise corpus comparisons
-- Cramér's V effect size for chi-square tests
-- Log Ratio effect size for LLR comparisons
-- CRITICAL: Sections 4.1-4.3 analyse CORRECT USAGE ONLY (errors filtered)
-- Section 4.4 analyses errors specifically
-- Graph 9 with chi-square, standardized residuals, Cramér's V
-- Graph 9b: Correspondence Analysis visualization
-
-Statistical Framework (based on corpus linguistics standards):
-- Overall distribution tests: Chi-square test of independence
-- Overall central tendency (ordinal): Kruskal-Wallis H (accessibility only)
-- Pairwise corpus comparisons: Log-Likelihood Ratio (Dunning 1993)
-- Pairwise central tendency: Dunn's test (accessibility only)
-- Effect sizes: Cramér's V with bootstrap 95% CI, Log Ratio, eta-squared
-- Multiple comparison correction: Benjamini-Hochberg (all pairwise tests)
-
-References:
-- Dunning (1993) for LLR
-- Gries & Paquot (2020) for reporting standards
-- Benjamini & Hochberg (1995) for FDR correction
-
-Author: Jiaqi's Dui-construction Project
-Date: March 2026
-"""
 
 import pandas as pd
 import numpy as np
